@@ -1,0 +1,272 @@
+
+.calendar-item {
+	display: table;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
+
+.calendar-item:after {
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.calendar-item .event-details {
+	width: 75%;
+	display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.calendar-item .event-details span {
+	display: block;
+	width: 100%;
+	line-height: 24px;
+}
+
+.calendar-item .event-details .event-title {
+	font-weight: bold;
+}
+
+.calendar-item .event-details .event-location {
+	color: #666;
+}
+
+.calendar-item .event-details .event-date {
+	color: #666;
+	margin-top: 5px;
+}
+
+.calendar-entry {
+	background-color: #3c3d41;
+	width: 20%;
+	color: #fff;
+	padding: 15px;
+	display: table-cell;
+    vertical-align: middle;
+    height: 30%;
+}
+
+.calendar-entry span {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.calendar-entry span.day-of-week-label {
+	font-size: 14px;
+}
+
+.calendar-entry span.date-label {
+	font-size: 50px;
+	letter-spacing: 4px;
+	font-weight: 200;
+}
+
+.calendar-entry span.month-label {
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+.calendar-item .reveal-more {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.calendar-item .reveal-more .fa {
+	font-size: 40px;
+	color: #999;
+	display: block;
+}
+
+.calendar-item .reveal-more:hover .fa {
+	color: inherit;
+}
+
+.upcoming-event {
+
+	.content {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+}
+
+#upcoming-event .event-location {
+	display: block;
+	margin-bottom: 10px;
+	color: #999;
+}
+
+#upcoming-event .view-all {
+	color: #999;
+}
+
+.timer-col span.label {
+	border: 2px solid #CCC;
+	border-radius: 2px;
+}
+
+	#event-details {
+	width: 100%;
+	display: block;
+	min-height: 150px; }
+
+		#event-details .left {
+		float: left; width: 50%; margin-right: 50px; display: block; }
+
+		#event-details .right {
+		float: right; width: 40%; }
+
+		.entry-content h1.price {
+			font-weight: 200;
+			font-size: 48px;
+			margin-top: 0px;
+			line-height: 38px; }
+
+	form.volunteer-form ul {
+	list-style: none;
+	padding: 15px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 25px; }
+
+		form.volunteer-form > ul > li {
+		padding: 4px 0; }
+
+		form.volunteer-form input {
+		width: 170px; }
+
+		form.volunteer-form label {
+		min-width: 120px;
+		display: inline-block;
+		text-align: right; }
+
+		form.volunteer-form input[type="submit"] {
+		margin-left: 126px; }
+
+	#volunteer-box {
+	display: block;
+	width: 100%;
+	clear: both;
+	margin-top: 15px; }
+
+	#upcoming-event {
+		padding-top: 35px;
+		padding-bottom: 20px; }
+
+		#upcoming-event h2,
+		#upcoming-event h3,
+		#upcoming-event h4,
+		#upcoming-event h5 {
+		margin-top: 0; }
+
+	.timer-col {
+	margin-right: 3%;
+	display: inline-block;
+	width: initial; }
+
+		.timer-col span {
+		height: 45px;
+		display: block;
+		text-align: center;
+		line-height: 45px;
+		font-size: 18px;
+		width: 50px;
+		font-weight: 300; }
+
+	#upcoming-event h2 {
+	font-weight: inherit; }
+
+	.event-countdown {
+		padding-top: 5px;
+	}
+
+	#upcoming-event {
+		padding: 40px;
+	}
+
+	#upcoming-event .row:after {
+	   content: ".";
+	   visibility: hidden;
+	   display: block;
+	   height: 0;
+	   clear: both;
+	}
+
+	#upcoming-event #date-time {
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+	}
+
+	#upcoming-event #countdown {
+		width: 50%;
+		float: left;
+	}
+
+	#upcoming-event-permalinks {
+		padding: 0;
+		margin-top: 15px;
+	}
+
+	#upcoming-event-permalinks a:first-of-type {
+		margin-right: 20px;
+	}
+
+@media (max-width: 992px) {
+
+	#upcoming-event h2 {
+		font-size: 26px;
+		margin-bottom: 40px; }
+
+	.timer-col {
+		margin: 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	#upcoming-event #date-time {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+
+	#upcoming-event #countdown {
+		width: 100%;
+		float: none;
+	}
+
+	#upcoming-event-permalinks a {
+		float: left;
+		clear: left;
+		margin-bottom: 10px;
+	}
+
+	#upcoming-event-permalinks a:last-of-type {
+		display: block;
+    	width: 100%;
+    	padding: 15px 0;
+	}
+
+	#upcoming-event-permalinks a:first-of-type {
+		float: none;
+		margin: 0 auto;
+	}
+
+	#event-details > div.left,
+	#event-details > div.right {
+	width: 100%;
+	float: none;
+	margin-bottom: 20px; }
+
+	.timer-col {
+		margin-right: 1%; }
+
+}
