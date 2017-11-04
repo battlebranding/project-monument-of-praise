@@ -3,8 +3,6 @@
 	<ul>
 		<li class="visible-xs" role="presentation"><a href="<?php echo home_url('watch'); ?>">Watch Live</a></li>
 		<li class="visible-xs" role="presentation"><a href="<?php echo home_url('events'); ?>">Events</a></li>
-		<li class="visible-xs" role="presentation"><a href="<?php echo home_url('sermons'); ?>">Sermons</a></li>
-		<li class="visible-xs" role="presentation"><a href="<?php echo home_url('give'); ?>">Give</a></li>
 		<li class="visible-xs" role="presentation"><a href="<?php echo home_url('our-story'); ?>">Our Story</a></li>
 		<?php wp_nav_menu( array('menu' => 'Side Menu' )); ?>
 	</ul>
@@ -15,8 +13,6 @@
 		<ul id="location-menu" class="nav nav-pills pull-right">
 			<li class="hidden-xs" role="presentation"><a href="<?php echo home_url('watch'); ?>">Watch Live</a></li>
 			<li class="hidden-xs" role="presentation"><a href="<?php echo home_url('events'); ?>">Events</a></li>
-			<li class="hidden-xs" role="presentation"><a href="<?php echo home_url('sermons'); ?>">Sermons</a></li>
-			<li class="hidden-xs" role="presentation"><a href="<?php echo home_url('give'); ?>">Give</a></li>
 			<li class="hidden-xs" role="presentation"><a href="<?php echo home_url('our-story'); ?>">Our Story</a></li>
 			<li role="presentation"><a href="#" class="open-menu">Menu <i class="fa fa-bars"></i></a></li>
 		</ul>

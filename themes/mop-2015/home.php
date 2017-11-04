@@ -5,6 +5,15 @@
 		<meta name="google-site-verification" content="B4rjDdE-eCMm90BZGlQ9sBrCbXUtbXcYzFMUIsYFjS8" />
 		<meta name="google-site-verification" content="DDykFjlXxiveuPD6Fif3HFPSniijhdfScOOPTgOBAt8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109222604-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-109222604-2');
+		</script>
 		<?php wp_head(); ?>
 	</head>
 	<body>
