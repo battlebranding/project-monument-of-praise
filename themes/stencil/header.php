@@ -6,6 +6,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
       <title><?php echo get_bloginfo(); ?> :: <?php echo ( is_home() ) ? '' : the_title() . ' :: ' ?> Greensboro, NC Dr. Kevin Williams, Pastor</title>
 
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109222604-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109222604-2');
+      </script>
+
       <?php wp_head(); ?>
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
