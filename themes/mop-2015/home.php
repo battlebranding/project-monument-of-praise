@@ -8,8 +8,8 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<img src="https://t.visto1.net/e?adv=392&ca=0&acc=62&tag=L2586" />
-		<img src="https://t.visto1.net/rt?adv=392&ca=0&acc=62&tag=R2585" />
+		<img src="https://t.visto1.net/e?adv=392&ca=0&acc=62&tag=L2586" style="display: inherit;" />
+		<img src="https://t.visto1.net/rt?adv=392&ca=0&acc=62&tag=R2585" style="display: inherit;" />
 		<?php get_template_part( 'views/navigation' ); ?>
 		<!-- <div id="billboard" class="container-fluid" style="padding-top: 90px; background-image: url('http://newjc.org/wp-content/themes/newjc-theme-2014/assets/img/universoul-circus-event.jpg'); background-size: cover; background-position: center; min-height: 700px;">
 	         <div class="container">
@@ -30,7 +30,7 @@
 				<source src="<?php echo get_template_directory_uri(); ?>/assets/video/sunday-morning.mp4" type="video/mp4">
 			</video>
 		</div>
-		<?php echo do_shortcode('[upcoming_event]'); ?>
+		<?php // echo do_shortcode('[upcoming_event]'); ?>
 		<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/assets/images/bible-picnic.jpg"></div>
 		<div id="hero-sermon-series" class="hero container-fluid">
 			<div class="row text-center">

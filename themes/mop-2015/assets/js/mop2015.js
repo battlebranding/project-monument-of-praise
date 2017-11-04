@@ -1,5 +1,5 @@
 jQuery('document').ready(function($){
-	
+
 	$('#hero-video').css( 'max-height', $(window).height() );
 
 	var scrollStartTop = 0;
@@ -14,7 +14,7 @@ jQuery('document').ready(function($){
 
 	// Change navigation background color
 	$(window).scroll(function ( scroll_event ) {
-		
+
 		// if( $(window).scrollTop() > 100 ) {
 		// 	$('#navigation').addClass('fade');
 		// } else {
@@ -29,15 +29,15 @@ jQuery('document').ready(function($){
 
 	        var w = $(window).scrollTop();
 	        var t = $(this).offset().top - 100;
-	        
+
 	        if (w > t) {
-	        	
+
 	            // $('#navigation').css({
 	            //     "color": $(this).css('color')
 	            // });
 	        }
 
-	    }); 
+	    });
 
 	});
 
@@ -45,7 +45,7 @@ jQuery('document').ready(function($){
 
 	// Change the price on the amount
 	$(document).on( 'keyup change','[name^=product_amount]', function(){
-		
+
 		var total = 0;
 
 		$('[name^=product_amount]').each(function( index, amount ){
@@ -61,11 +61,11 @@ jQuery('document').ready(function($){
 	});
 
 	// Process the credit card
-	if ( embee_stripe !== undefined && embee_stripe.publishable_key ) {
+	/* if ( embee_stripe !== undefined && embee_stripe.publishable_key ) {
 		Stripe.setPublishableKey( embee_stripe.publishable_key );
 	} else {
 		alert('The form is not connected to the payment processor. Please contact the finance department.');
-	}
+	} */
 
 	$('.stripe-form button[type="submit"]').on( 'click', function( form_submit ) {
 
@@ -82,7 +82,7 @@ jQuery('document').ready(function($){
 			form:    form
 		});
 
-		if ( form_is_valid && ( trigger !== false ) ) {	
+		if ( form_is_valid && ( trigger !== false ) ) {
 
 			$( submit_button ).attr( 'disabled', true ).text('Processing...');
 
@@ -94,9 +94,9 @@ jQuery('document').ready(function($){
 			});
 
 			request.done( function( response ) {
-				
+
 				$( submit_button ).removeAttr( 'disabled' ).text('Done!');
-				
+
 				if ( response.success ) {
 
 					alert( response.message );
@@ -108,7 +108,7 @@ jQuery('document').ready(function($){
 
 
 				}
-				
+
 			});
 
 		}
@@ -122,12 +122,12 @@ jQuery('document').ready(function($){
 		$('.stripe-field.required').removeClass('has-error');
 
 		$('.stripe-field.required').each(function(){
-			
+
 			if ( $(this).find('input,select,textarea').val() == '' ) {
-				
+
 				form_is_valid = false;
 				$(this).addClass('has-error');
-				
+
 			}
 
 		});
@@ -147,13 +147,13 @@ jQuery('document').ready(function($){
 			Stripe.card.createToken( $( freeform_submit.form ), stripeResponseHandler );
 
 			function stripeResponseHandler( status, response ) {
-				
+
 				if( response.error ) {
-					
+
 					alert( response.error.message );
 
 				} else if( response.id ) {
-					
+
 					$('input[name="stripe_token"]').val( response.id );
 
 					$('.stripe-form button[type="submit"]').click();
