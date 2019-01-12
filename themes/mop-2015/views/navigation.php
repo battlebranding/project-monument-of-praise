@@ -1,3 +1,6 @@
+<section style="background-color: red; color: #ffffff;">
+	<p>7am & 9am services are cancelled. Combined service for Monument of Praise and New Jerusalem Cathedral begins at 12PM.</p>
+</section>
 <div id="side-menu">
 	<a class="close-menu">Close <i class="fa fa-times"></i></a>
 	<ul>
