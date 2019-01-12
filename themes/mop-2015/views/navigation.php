@@ -9,7 +9,7 @@
 	</ul>
 </div>
 <div id="navigation">
-	<section style="background-color: red; color: #ffffff; text-align: center;">
+	<section style="background-color: red; color: #ffffff; text-align: center; text-transform: initial; padding: 10px;">
 		<p>7am & 9am services are cancelled. Combined service for Monument of Praise and New Jerusalem Cathedral begins at 12PM.</p>
 	</section>
 	<div class="row">
