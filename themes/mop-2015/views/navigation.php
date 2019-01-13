@@ -10,7 +10,7 @@
 </div>
 <div id="navigation">
 	<section style="background-color: red; color: #ffffff; text-align: center; text-transform: initial;">
-		<p>7am & 9am services are cancelled. Combined service for Monument of Praise and New Jerusalem Cathedral begins at 12PM.</p>
+		<p>7am & 9am services are cancelled. Combined service for Monument of Praise and New Jerusalem Cathedral begins at 12PM at New Jerusalem Cathedral.</p>
 	</section>
 	<div class="row">
 		<h1 id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/monument-logo-white.png" width="194" height="80" /></a></h1>
